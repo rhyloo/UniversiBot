@@ -1,0 +1,30 @@
+import telebot
+from telebot.types import InlineKeyboardButton, InlineKeyboardButton
+
+##VARIABLES
+bot_name = "My first agenda"
+bot = telebot.TeleBot("1370488161:AAE4JEvyoz1hVS7KznyU2W-M2UaSpilEOUs")
+init_message = f"""Bienvenido a {bot_name}
+Este bot ha sido desarrollado por estudiantes
+para estudiantes, esperamos que te sea de utilidad.
+No dudes en contactar con nostros.
+Si necesitas ayuda para empezar escribe /help"""
+##FUNCTIONS
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    chat_id = message.chat.id
+    #Make a box with the message/link contact with us
+    keyboard = telebot.types.InlineKeyboardMarkup()
+    keyboard.add(
+        telebot.types.InlineKeyboardButton(
+            "Contact with me", url='https://t.me/rhyloo'
+        )
+    )
+    #Save the chat_id (Idk if its necessary)
+    save_data(chat_id)
+    #Send init message befor box "contact me"
+    bot.send_message(chat_id,init_message , reply_markup = keyboard)
+    return(chat_id)
+
+bot.polling(none_stop=True)

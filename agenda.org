@@ -1,0 +1,13 @@
+* agenda_bot
+** Cosas que debo implementar
+*** TODO Password
+    No sé si necesito una base datos para cada persona que lo use por
+    ahora es personal así que no sé si lo necesito.
+    [2020-11-08 do.]
+*** DONE Mensaje de saludo
+    No es necesario pero le da belleza.
+*** DONE Abrir archivo y leer un esquema 
+    Tiene que leer una estructura
+    Fecha/Hora/notificacion/periodo/etc...
+*** Eliminar etiqueta Alarm separar la hora y la fecha en una base de
+    datos creo que será más eficiente.

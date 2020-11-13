@@ -13,7 +13,7 @@ import threading
 
 
 ##VARIABLES
-bot_name = "J.A.R.V.I.Sl"
+bot_name = "J.A.R.V.I.S"
 bot = telebot.TeleBot(token)
 init_message = f"""¡Bienvenido extraño!\nEsta es una agenda privada si
 crees que te lo mereces ingresa la contraseña y observa las tareas de Rhyloo."""

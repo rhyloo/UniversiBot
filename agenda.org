@@ -1,13 +1,42 @@
 * agenda_bot
-** Cosas que debo implementar
-*** TODO Password
-    No sé si necesito una base datos para cada persona que lo use por
-    ahora es personal así que no sé si lo necesito.
-    [2020-11-08 do.]
-*** DONE Mensaje de saludo
-    No es necesario pero le da belleza.
-*** DONE Abrir archivo y leer un esquema 
-    Tiene que leer una estructura
-    Fecha/Hora/notificacion/periodo/etc...
-*** Eliminar etiqueta Alarm separar la hora y la fecha en una base de
-    datos creo que será más eficiente.
+** Parte 1
+   A ver que pase, código base sobre el que experimentar.
+** Parte 2
+*** Funciones a desarrollar [0/5]
+**** Funciones "cliente".
+    1. [ ] Añadir y borrar tareas.
+    2. [ ] Modificar estado de tareas (DONE, TODO, IN PROGRESS, ETC...)
+    3. [ ] Modificar fecha/hora/frecuencia de notificación.
+    4. [ ] Diseño interfaz amigable (inlinekeyboard).
+    5. [ ] Visualizar tareas enumeradas.
+    6. [ ] Posponer tareas S.
+    7. [ ] Implementar un sistema de visualización de notas.
+    8. [ ] Implementar un password o un sistema de seguridad con encriptación.
+**** Funciones "servidor".[0/2]
+     1. [ ] Crear etiquetas para las notas.
+	- :ALARM:, :DATE:, :FRECUENCY:, algo más.
+     2. [ ] Emacs capture generation config.
+*** Mejoras [0/3]
+    1. [ ] Depurar código.
+    2. [ ] Separar en varios archivos las funciones.
+    3. [ ] Implementar la función agendas miembros de familiar(base de
+    datos maybe?).
+*** Bugs [0/3]
+    1. [ ] Cuando solicitas un archivo y no lo encuentra falla debe
+       implementar funciones de error como try:
+    2. [ ] No genera el archivo ids.txt
+    3. [ ] Al parecer el sitio dónde ejecuto el bot va con una hora
+    menos en local debe arreglarse a nivel de código (Investigar).
+*** Structure 
+    + main.py
+      + data.py
+	token
+	password
+	personal information maybe
+      + server-client.py
+	Aquí van las funciones que tiene que ejecutar el servidor:
+	- Notificaciones, recordatorios, etc...
+      + client-server.py
+	Solicitudes que hace el cliente como ver la lista de tareas,
+        añadir, cambiar fechas, etc... 
+

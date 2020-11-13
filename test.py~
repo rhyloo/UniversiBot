@@ -1,6 +1,0 @@
-agenda = open("agenda.org", "r")
-content = agenda.readlines()
-agenda.close()
-
-for i in content:
-    print(content[i])

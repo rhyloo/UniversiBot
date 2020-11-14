@@ -167,8 +167,11 @@ def notifications():
 
   try:
     for i in range(len(state)):
-      if(state[i] == "TODO" and day[i] == str(localtime.tm_mday) and month[i] == str(localtime.tm_mon) and year[i] == str(localtime.tm_year) and hour[i] == localtime_useful_hour and minute[i] == localtime_useful_min):
-      send_message(message[i])
+      if(state[i] == "TODO" and day[i] == str(localtime.tm_mday) and
+    month[i] == str(localtime.tm_mon) and year[i] ==
+    str(localtime.tm_year) and hour[i] == localtime_useful_hour and
+    minute[i] == localtime_useful_min):
+        send_message(message[i])
   except:
     print("Error! Check!")
     

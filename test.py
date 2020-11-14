@@ -138,9 +138,7 @@ def checkit():
     readorg(content)
   except:
     print("Notes.org doesn't exist please create one!")
-  
-  
-      
+        
 ### Hilo 1
 def notifications():
   #Time default 60.0

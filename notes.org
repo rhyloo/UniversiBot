@@ -1,21 +1,21 @@
-* TODO Tasks
-** TODO Ir a por la comida
-   :ALARM: [2020-11-06 vi. 13:55]
-** TODO Cepillarse los dientes
-   :ALARM: [2020-11-05 ju. 16:30]
-** TODO Comprar cosas
-   :ALARM: [2020-11-06 vi. 14:15]
-** TODO Vive como un rey baila como un mendigo
-   :ALARM: [2020-11-06 vi. 17:15]
-** TODO Esto funciona po?
-   :ALARM: [2020-11-06 vi. 15:00]
-** TODO Correo importante
-   :ALARM: [2020-11-06 vi. 15:15]
-** TODO Te quiero <3
-   :ALARM: [2020-11-06 vi. 15:50]
+* Tasks
+** TODO Prueba de tarea 1
+   :ALARM: [2020-11-14 sá. 17:25]
+** TODO Prueba de tarea 2
+   :ALARM: [2020-11-14 sá. 17:20]
 ** TODO Prueba de tarea 3
-   :ALARM: [2020-11-06 vi. 17:40]
+   :ALARM: [2020-11-14 sá. 17:25]
+** TODO Prueba de tarea 4
+   :ALARM: [2020-11-14 sá. 17:30]
+** TODO Prueba de tarea 5
+   :ALARM: [2020-11-14 sá. 17:30]
+** TODO Prueba de tarea 6
+   :ALARM: [2020-11-14 sá. 17:25]
+** TODO Prueba de tarea 7
+   :ALARM: [2020-11-14 sá. 16:55]
+** TODO Prueba de tarea 8
+   :ALARM: [2020-11-14 sá. 16:45]
 ** DONE Prueba de tarea hecha 1
-   :ALARM: [2020-11-06 vi. 22:30]
+   :ALARM: [2020-11-14 sá. 16:50]
 ** DONE Prueba de tarea hecha 2
-   :ALARM: [2020-11-08 do. 22:30]
+   :ALARM: [2020-11-14 sá. 16:40]

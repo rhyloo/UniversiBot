@@ -19,8 +19,6 @@ init_message = f"""¡Bienvenido extraño!\nEsta es una agenda privada si
 crees que te lo mereces ingresa la contraseña y observa las tareas de Rhyloo."""
 
 ##FUNCTIONS
-
-
 ### Hilo 1
 def checkit():
   #Time default 60.0
@@ -55,6 +53,7 @@ def checkit():
             send_message(content[i-1])
 checkit()
 ### Hilo 2
+
 def send_message(text):
     ids = open('ids.txt', 'r')
     for line in ids:
@@ -74,12 +73,6 @@ def save_data(chat_id):
       ids.write(str(chat_id)+'\n')
       ids.close()
 
-#is the file?
-def itfile(content):
-    if (content[1] == "* Tasks"):
-        pass
-    else:
-        print("Error no existe ese archivo")
 #read the tags
 def readtgs(content):
     #tags here

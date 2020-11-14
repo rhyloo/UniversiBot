@@ -10,12 +10,8 @@ para estudiantes, esperamos que te sea de utilidad.
 No dudes en contactar con nostros.
 Si necesitas ayuda para empezar escribe /help"""
 ##FUNCTIONS
-# Abre el archivo en modo lectura
-agenda = open("agenda.org", "r")
-content = agenda.readlines()
-agenda.close()
 
-print(content[1])
+
 
 def save_data(chat_id):
     ids = open('ids.txt', 'a')

@@ -20,8 +20,9 @@ import os
 ##VARIABLES
 bot_name = "J.A.R.V.I.S"
 bot = telebot.TeleBot(token)
-init_message = f"""¡Bienvenido extraño!\nEsta es una agenda privada si
-crees que te lo mereces ingresa la contraseña y observa las tareas de Rhyloo."""
+init_message =f"""¡Bienvenido extraño!\nEsta es una agenda privada si
+crees que te lo mereces ingresa la contraseña y observa las tareas de
+Rhyloo."""
 name_agenda = 'agenda.csv'
 
 ##FUNCTIONS
@@ -130,10 +131,14 @@ def save_data(chat_id):
       ids.close()
 
 def checkit():
-  agenda = open("notes.org", "r")
-  content = agenda.readlines()
-  agenda.close()
-  readorg(content)
+  try:
+    agenda = open("notes.org", "r")
+    content = agenda.readlines()
+    agenda.close()
+    readorg(content)
+  except:
+    print("Notes.org doesn't exist please create one!")
+  
   
       
 ### Hilo 1
@@ -144,7 +149,7 @@ def notifications():
   print("Revisado...")
   localtime = time.localtime(time.time())
   localtime_useful_hour,localtime_useful_min = filterlocaltime(localtime)
-
+  
   state = read_csv(0)
   day = read_csv(1)
   month = read_csv(2)
